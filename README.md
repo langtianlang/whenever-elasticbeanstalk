@@ -92,7 +92,7 @@ end
 To run a task on all instance, omit the `roles` option.
 ```ruby
 every 1.minute do
-	command "touch $EB_CONFIG_APP_SUPPORT/.cron_check"
+	command "touch $EB_SUPPORT_DIR/.cron_check"
 end
 ```
 
