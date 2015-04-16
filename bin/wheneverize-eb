@@ -87,7 +87,7 @@ files:
       elif test -d /opt/elasticbeanstalk/support; then
         . /opt/elasticbeanstalk/support/envvars
       fi
-      
+
       su -l -c "cd $EB_CONFIG_APP_CURRENT && /usr/local/bin/bundle exec setup_cron" $EB_CONFIG_APP_USER
   # Add Bundle to the PATH
   "/etc/profile.d/bundle.sh":
